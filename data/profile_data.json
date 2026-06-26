@@ -1,5 +1,12 @@
 {
-  "name": "Arda Yazıcı",
+  "personal": {
+    "name": "Arda Yazıcı",
+    "location": "Ankara, Turkey",
+    "email": "ardayaz.buss@gmail.com",
+    "phone": "+90 534 838 2510",
+    "linkedin": "linkedin.com/in/arda-yazıcı",
+    "github": "github.com/Arda-Yaz"
+  },
   "target_titles": [
     "Junior AI Engineer",
     "Junior Machine Learning Engineer",
@@ -7,7 +14,7 @@
     "Data Analyst",
     "Python Developer - Data/AI Focused"
   ],
-  "summary_base": "New graduate Computer Engineer focused on AI, machine learning, and data-driven applications. Experienced in building Streamlit-based data products, machine learning prototypes, and YOLO-based computer vision models using custom datasets.",
+  "summary": "New graduate Computer Engineer focused on AI, machine learning, and data-driven applications. Experienced in building Streamlit-based data products, machine learning prototypes, and YOLO-based computer vision models using custom datasets.",
   "education": [
     {
       "school": "Suleyman Demirel University",
@@ -109,16 +116,21 @@
     }
   ],
   "skills": {
-    "languages": ["Python", "SQL"],
-    "data_ml": ["Pandas", "NumPy", "scikit-learn", "PyTorch", "TensorFlow"],
-    "computer_vision": ["OpenCV", "YOLO"],
-    "tools": ["Git", "Streamlit", "Supabase", "Plotly"],
-    "ai_workflow": ["Prompt Design", "AI Coding Tools", "LLM-based Development"]
+    "Languages": ["Python", "SQL"],
+    "Data & ML": ["Pandas", "NumPy", "scikit-learn", "PyTorch", "TensorFlow"],
+    "Computer Vision": ["OpenCV", "YOLO"],
+    "Tools": ["Git", "Streamlit", "Supabase", "Plotly"],
+    "AI Workflow": ["Prompt Design", "AI Coding Tools", "LLM-based Development"]
   },
   "blocked_claims": [
-    "Do not claim exact model accuracy, mAP, precision, recall, or performance improvement unless evidence is provided.",
-    "Do not claim production deployment unless the project was actually deployed.",
-    "Do not claim advanced SQL if only basic SQL experience exists.",
-    "Do not claim professional AI Engineer experience outside internship/project context."
+    "accuracy",
+    "mAP",
+    "precision",
+    "recall",
+    "improved by",
+    "increased by",
+    "reduced by",
+    "production-ready",
+    "deployed to production"
   ]
 }
