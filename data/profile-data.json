@@ -1,0 +1,124 @@
+{
+  "name": "Arda Yazıcı",
+  "target_titles": [
+    "Junior AI Engineer",
+    "Junior Machine Learning Engineer",
+    "Junior Data Scientist",
+    "Data Analyst",
+    "Python Developer - Data/AI Focused"
+  ],
+  "summary_base": "New graduate Computer Engineer focused on AI, machine learning, and data-driven applications. Experienced in building Streamlit-based data products, machine learning prototypes, and YOLO-based computer vision models using custom datasets.",
+  "education": [
+    {
+      "school": "Suleyman Demirel University",
+      "degree": "BSc in Computer Engineering",
+      "location": "Isparta, Turkey",
+      "start": "September 2022",
+      "end": "June 2026"
+    }
+  ],
+  "experience": [
+    {
+      "company": "NeonRun",
+      "title": "Machine Learning Engineer Intern",
+      "location": "Ankara, Turkey",
+      "start": "July 2025",
+      "end": "August 2025",
+      "bullets": [
+        {
+          "text": "Collected and annotated a custom dataset for detecting GD&T symbols in technical engineering drawings.",
+          "skills": ["Computer Vision", "Dataset Annotation", "Object Detection", "GD&T"],
+          "evidence": "NeonRun internship",
+          "metrics_available": false
+        },
+        {
+          "text": "Managed bounding box annotation workflows for object detection model training.",
+          "skills": ["Bounding Box Annotation", "YOLO", "Computer Vision"],
+          "evidence": "NeonRun internship",
+          "metrics_available": false
+        },
+        {
+          "text": "Applied data augmentation techniques to improve robustness under different document conditions.",
+          "skills": ["Data Augmentation", "Computer Vision", "Preprocessing"],
+          "evidence": "NeonRun internship",
+          "metrics_available": false
+        },
+        {
+          "text": "Trained a YOLO-based object detection prototype for symbol detection and classification in technical documents.",
+          "skills": ["YOLO", "Object Detection", "Model Training", "Computer Vision"],
+          "evidence": "NeonRun internship",
+          "metrics_available": false
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "DataWorks - Data Processing and ML Prototyping Platform",
+      "tech": ["Python", "Streamlit", "scikit-learn", "Pandas", "Plotly"],
+      "bullets": [
+        {
+          "text": "Built a Streamlit-based data analysis platform covering data ingestion, cleaning, EDA, visualization, preprocessing, and ML model experimentation.",
+          "skills": ["Streamlit", "Python", "Data Analysis", "Machine Learning", "EDA"],
+          "evidence": "Public GitHub project",
+          "metrics_available": false
+        },
+        {
+          "text": "Implemented support for CSV, TSV, Excel, and JSON file ingestion with automatic column type inference.",
+          "skills": ["Data Ingestion", "Pandas", "Python"],
+          "evidence": "DataWorks project",
+          "metrics_available": false
+        },
+        {
+          "text": "Developed modular data cleaning tools for missing values, duplicates, outliers, and inconsistent values.",
+          "skills": ["Data Cleaning", "Preprocessing", "Pandas"],
+          "evidence": "DataWorks project",
+          "metrics_available": false
+        },
+        {
+          "text": "Integrated classification and regression workflows using scikit-learn with standard preprocessing steps.",
+          "skills": ["scikit-learn", "Classification", "Regression", "Model Evaluation"],
+          "evidence": "DataWorks project",
+          "metrics_available": false
+        }
+      ]
+    },
+    {
+      "name": "AI-Powered Personality Analysis App",
+      "tech": ["Streamlit", "Supabase", "Hugging Face"],
+      "bullets": [
+        {
+          "text": "Developed a Streamlit application for Big Five-based personality analysis and MBTI-style inference.",
+          "skills": ["Streamlit", "LLM", "Personality Analysis"],
+          "evidence": "Project implementation",
+          "metrics_available": false
+        },
+        {
+          "text": "Integrated Supabase for user session tracking and result storage.",
+          "skills": ["Supabase", "Backend Integration", "Database"],
+          "evidence": "Project implementation",
+          "metrics_available": false
+        },
+        {
+          "text": "Used a Hugging Face-based language model to generate personalized analysis text.",
+          "skills": ["Hugging Face", "LLM", "Text Generation"],
+          "evidence": "Project implementation",
+          "metrics_available": false
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "languages": ["Python", "SQL"],
+    "data_ml": ["Pandas", "NumPy", "scikit-learn", "PyTorch", "TensorFlow"],
+    "computer_vision": ["OpenCV", "YOLO"],
+    "tools": ["Git", "Streamlit", "Supabase", "Plotly"],
+    "ai_workflow": ["Prompt Design", "AI Coding Tools", "LLM-based Development"]
+  },
+  "blocked_claims": [
+    "Do not claim exact model accuracy, mAP, precision, recall, or performance improvement unless evidence is provided.",
+    "Do not claim production deployment unless the project was actually deployed.",
+    "Do not claim advanced SQL if only basic SQL experience exists.",
+    "Do not claim professional AI Engineer experience outside internship/project context."
+  ]
+}
