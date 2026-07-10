@@ -1,4 +1,5 @@
 from pathlib import Path
+import profile
 
 from docx import Document as create_document
 from docx.document import Document as DocxDocument
@@ -89,6 +90,8 @@ def export_resume_to_docx(
     profile: dict,
     grouped_resume: dict,
     target_title: str,
+    summary: str | None = None,
+    skills: dict | None = None,
     output_path: str = "exports/generated_resume.docx"
 ) -> str:
     document = create_document()
@@ -131,12 +134,14 @@ def export_resume_to_docx(
     _add_section_heading(document, "Summary")
     summary_paragraph = document.add_paragraph()
     summary_paragraph.paragraph_format.space_after = Pt(2)
-    summary_run = summary_paragraph.add_run(profile["summary"])
+    summary_run = summary_paragraph.add_run(summary or profile["summary"])
     summary_run.font.size = Pt(10)
 
     # Technical Skills
     _add_section_heading(document, "Technical Skills")
-    for category, skills in profile.get("skills", {}).items():
+    skills_to_render = skills or profile.get("skills", {})
+
+    for category, skill_list in skills_to_render.items():
         paragraph = document.add_paragraph()
         paragraph.paragraph_format.space_after = Pt(1)
 
@@ -144,7 +149,7 @@ def export_resume_to_docx(
         category_run.bold = True
         category_run.font.size = Pt(10)
 
-        skills_run = paragraph.add_run(", ".join(skills))
+        skills_run = paragraph.add_run(", ".join(skill_list))
         skills_run.font.size = Pt(10)
 
     # Experience

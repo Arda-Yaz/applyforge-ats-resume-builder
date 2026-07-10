@@ -72,34 +72,60 @@ def collect_all_bullets(profile: dict) -> list[dict]:
     return bullets
 
 
-def score_bullet_against_job(bullet: dict, job_keywords: list[str]) -> int:
+def score_bullet_against_job(
+    bullet: dict,
+    job_keywords: list[str],
+    role_keywords: list[str] | None = None
+) -> int:
     bullet_skills = [
         normalize(skill)
         for skill in bullet.get("skills", [])
     ]
 
-    normalized_keywords = [
+    normalized_job_keywords = [
         normalize(keyword)
         for keyword in job_keywords
     ]
 
+    normalized_role_keywords = [
+        normalize(keyword)
+        for keyword in (role_keywords or [])
+    ]
+
     score = 0
 
-    for keyword in normalized_keywords:
+    # Job description keywords are the strongest signal.
+    for keyword in normalized_job_keywords:
         if keyword in bullet_skills:
             score += 3
+        elif any(keyword in skill or skill in keyword for skill in bullet_skills):
+            score += 1
+
+    # Role profile keywords are a secondary boost.
+    for keyword in normalized_role_keywords:
+        if keyword in bullet_skills:
+            score += 2
         elif any(keyword in skill or skill in keyword for skill in bullet_skills):
             score += 1
 
     return score
 
 
-def recommend_bullets(profile: dict, job_keywords: list[str], limit: int = 10) -> list[dict]:
+def recommend_bullets(
+    profile: dict,
+    job_keywords: list[str],
+    role_keywords: list[str] | None = None,
+    limit: int = 10
+) -> list[dict]:
     bullets = collect_all_bullets(profile)
 
     scored = []
     for bullet in bullets:
-        score = score_bullet_against_job(bullet, job_keywords)
+        score = score_bullet_against_job(
+            bullet=bullet,
+            job_keywords=job_keywords,
+            role_keywords=role_keywords
+        )
 
         if score > 0:
             scored.append({
@@ -110,7 +136,6 @@ def recommend_bullets(profile: dict, job_keywords: list[str], limit: int = 10) -
     scored.sort(key=lambda item: item["score"], reverse=True)
 
     return scored[:limit]
-
 
 def calculate_match_score(matched: list[str], missing: list[str]) -> int:
     total = len(matched) + len(missing)

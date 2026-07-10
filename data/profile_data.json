@@ -132,5 +132,123 @@
     "reduced by",
     "production-ready",
     "deployed to production"
-  ]
+  ],
+  "role_profiles": {
+  "AI/ML Engineer": {
+    "target_title": "Junior AI/ML Engineer",
+    "summary": "New graduate Computer Engineer focused on AI, machine learning, and data-driven applications. Experienced in building Streamlit-based ML prototypes, data preprocessing workflows, and YOLO-based computer vision models using custom datasets.",
+    "preferred_keywords": [
+      "Machine Learning",
+      "Python",
+      "scikit-learn",
+      "Model Evaluation",
+      "Preprocessing",
+      "Data Cleaning",
+      "Pandas",
+      "NumPy",
+      "Streamlit",
+      "YOLO",
+      "Computer Vision"
+    ],
+    "skill_category_order": [
+      "Languages",
+      "Data & ML",
+      "Computer Vision",
+      "Tools",
+      "AI Workflow"
+    ]
+  },
+  "Data Scientist": {
+    "target_title": "Junior Data Scientist",
+    "summary": "New graduate Computer Engineer focused on data science, machine learning, and exploratory data analysis. Experienced in data cleaning, preprocessing, visualization, model experimentation, and building Streamlit-based tools for rapid data analysis.",
+    "preferred_keywords": [
+      "Data Science",
+      "Data Analysis",
+      "Python",
+      "Pandas",
+      "NumPy",
+      "scikit-learn",
+      "EDA",
+      "Data Cleaning",
+      "Data Visualization",
+      "Model Evaluation",
+      "Statistics"
+    ],
+    "skill_category_order": [
+      "Languages",
+      "Data & ML",
+      "Tools",
+      "Computer Vision",
+      "AI Workflow"
+    ]
+  },
+  "Data Analyst": {
+    "target_title": "Junior Data Analyst",
+    "summary": "New graduate Computer Engineer focused on data analysis, data cleaning, visualization, and building data-driven applications. Experienced in creating Streamlit-based analysis tools, working with multiple data formats, and developing workflows for EDA and reporting.",
+    "preferred_keywords": [
+      "Data Analysis",
+      "Data Cleaning",
+      "Python",
+      "SQL",
+      "Pandas",
+      "Data Visualization",
+      "Plotly",
+      "EDA",
+      "Dashboard",
+      "Streamlit"
+    ],
+    "skill_category_order": [
+      "Languages",
+      "Tools",
+      "Data & ML",
+      "AI Workflow",
+      "Computer Vision"
+    ]
+  },
+  "Computer Vision": {
+    "target_title": "Junior Computer Vision Engineer",
+    "summary": "New graduate Computer Engineer with hands-on experience in computer vision, object detection, dataset annotation, and YOLO-based model prototyping. Worked on detecting GD&T symbols in technical engineering drawings using a custom collected dataset.",
+    "preferred_keywords": [
+      "Computer Vision",
+      "Object Detection",
+      "YOLO",
+      "OpenCV",
+      "Dataset Annotation",
+      "Data Augmentation",
+      "Model Training",
+      "Python",
+      "Preprocessing"
+    ],
+    "skill_category_order": [
+      "Languages",
+      "Computer Vision",
+      "Data & ML",
+      "Tools",
+      "AI Workflow"
+    ]
+  },
+  "Python/Data Developer": {
+    "target_title": "Junior Python Developer - Data/AI Focused",
+    "summary": "New graduate Computer Engineer focused on Python-based data applications, Streamlit tools, and AI-assisted software development. Experienced in building data processing workflows, integrating backend services, and developing interactive ML/data prototypes.",
+    "preferred_keywords": [
+      "Python",
+      "Streamlit",
+      "Git",
+      "Supabase",
+      "API",
+      "Data Processing",
+      "Pandas",
+      "Backend Integration",
+      "AI Coding Tools",
+      "LLM"
+    ],
+    "skill_category_order": [
+      "Languages",
+      "Tools",
+      "Data & ML",
+      "AI Workflow",
+      "Computer Vision"
+    ]
+  }
+}
 }

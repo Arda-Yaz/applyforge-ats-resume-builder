@@ -5,11 +5,11 @@ LinkedIn: linkedin.com/in/arda-yazıcı | GitHub: github.com/Arda-Yaz
 
 ## Target
 
-Junior AI Engineer
+Junior AI/ML Engineer
 
 ## Summary
 
-New graduate Computer Engineer focused on AI, machine learning, and data-driven applications. Experienced in building Streamlit-based data products, machine learning prototypes, and YOLO-based computer vision models using custom datasets.
+New graduate Computer Engineer focused on AI, machine learning, and data-driven applications. Experienced in building Streamlit-based ML prototypes, data preprocessing workflows, and YOLO-based computer vision models using custom datasets.
 
 ## Technical Skills
 

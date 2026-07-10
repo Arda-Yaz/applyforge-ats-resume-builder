@@ -2,6 +2,37 @@ from pathlib import Path
 from jinja2 import Environment, FileSystemLoader
 
 
+def get_role_profile(profile: dict, role_name: str) -> dict:
+    role_profiles = profile.get("role_profiles", {})
+
+    if role_name in role_profiles:
+        return role_profiles[role_name]
+
+    return {
+        "target_title": profile.get("target_titles", ["Junior AI/ML/Data Engineer"])[0],
+        "summary": profile.get("summary", ""),
+        "preferred_keywords": [],
+        "skill_category_order": list(profile.get("skills", {}).keys()),
+    }
+
+
+def reorder_skills_by_role(profile: dict, role_profile: dict) -> dict:
+    skills = profile.get("skills", {})
+    ordered_categories = role_profile.get("skill_category_order", [])
+
+    reordered = {}
+
+    for category in ordered_categories:
+        if category in skills:
+            reordered[category] = skills[category]
+
+    for category, category_skills in skills.items():
+        if category not in reordered:
+            reordered[category] = category_skills
+
+    return reordered
+
+
 def _bullet_key(bullet: dict) -> str:
     return bullet.get("text", "").strip().lower()
 
@@ -101,6 +132,7 @@ def enhance_selected_bullets(
 
     return enhanced
 
+
 def group_selected_bullets(profile: dict, selected_bullets: list[dict]) -> dict:
     experience = []
     projects = []
@@ -135,6 +167,8 @@ def generate_markdown_resume(
     profile: dict,
     selected_bullets: list[dict],
     target_title: str = "Junior AI/ML/Data Engineer",
+    summary: str | None = None,
+    skills: dict | None = None,
     template_path: str = "templates/ats_resume_template.md"
 ) -> str:
     template_file = Path(template_path)
@@ -150,8 +184,8 @@ def generate_markdown_resume(
     rendered = template.render(
         personal=profile["personal"],
         target_title=target_title,
-        summary=profile["summary"],
-        skills=profile["skills"],
+        summary=summary or profile["summary"],
+        skills=skills or profile["skills"],
         experience=grouped["experience"],
         projects=grouped["projects"],
         education=profile["education"]
