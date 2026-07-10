@@ -51,11 +51,11 @@ Ankara, Turkey | July 2025 - August 2025
 
 - Built a Streamlit-based data analysis platform covering data ingestion, cleaning, EDA, visualization, preprocessing, and ML model experimentation.
 
-- Implemented support for CSV, TSV, Excel, and JSON file ingestion with automatic column type inference.
-
 - Developed modular data cleaning tools for missing values, duplicates, outliers, and inconsistent values.
 
 - Integrated classification and regression workflows using scikit-learn with standard preprocessing steps.
+
+- Implemented support for CSV, TSV, Excel, and JSON file ingestion with automatic column type inference.
 
 
 ### AI-Powered Personality Analysis App
