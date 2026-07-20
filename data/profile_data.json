@@ -32,29 +32,47 @@
       "start": "July 2025",
       "end": "August 2025",
       "bullets": [
-        {
+       {
           "text": "Collected and annotated a custom dataset for detecting GD&T symbols in technical engineering drawings.",
           "skills": ["Computer Vision", "Dataset Annotation", "Object Detection", "GD&T"],
           "evidence": "NeonRun internship",
-          "metrics_available": false
+          "metrics_available": false,
+          "bullet_type": "anchor"
         },
         {
           "text": "Managed bounding box annotation workflows for object detection model training.",
-          "skills": ["Bounding Box Annotation", "YOLO", "Computer Vision"],
+          "skills": ["Bounding Box Annotation", "YOLO", "Computer Vision", "Object Detection"],
           "evidence": "NeonRun internship",
-          "metrics_available": false
+          "metrics_available": false,
+          "bullet_type": "technical_depth"
         },
         {
-          "text": "Applied data augmentation techniques to improve robustness under different document conditions.",
+          "text": "Applied data augmentation techniques to improve model robustness under different document conditions.",
           "skills": ["Data Augmentation", "Computer Vision", "Preprocessing"],
           "evidence": "NeonRun internship",
-          "metrics_available": false
+          "metrics_available": false,
+          "bullet_type": "technical_depth"
         },
         {
           "text": "Trained a YOLO-based object detection prototype for symbol detection and classification in technical documents.",
           "skills": ["YOLO", "Object Detection", "Model Training", "Computer Vision"],
           "evidence": "NeonRun internship",
-          "metrics_available": false
+          "metrics_available": false,
+          "bullet_type": "matched"
+        },
+        {
+          "text": "Worked on small-object detection challenges in noisy engineering drawing documents.",
+          "skills": ["Small Object Detection", "Noisy Data", "Computer Vision", "Technical Documents"],
+          "evidence": "NeonRun internship",
+          "metrics_available": false,
+          "bullet_type": "technical_depth"
+        },
+        {
+          "text": "Contributed to an end-to-end computer vision workflow covering dataset preparation, annotation, augmentation, model training, and result review.",
+          "skills": ["Computer Vision", "Dataset Preparation", "Data Augmentation", "Model Training", "Result Review"],
+          "evidence": "NeonRun internship",
+          "metrics_available": false,
+          "bullet_type": "support"
         }
       ]
     }
@@ -62,6 +80,7 @@
   "projects": [
     {
       "name": "DataWorks - Data Processing and ML Prototyping Platform",
+      "project_role": "flagship",
       "tech": ["Python", "Streamlit", "scikit-learn", "Pandas", "Plotly"],
       "bullets": [
         {
@@ -92,6 +111,7 @@
     },
     {
       "name": "AI-Powered Personality Analysis App",
+      "project_role": "supporting",
       "tech": ["Streamlit", "Supabase", "Hugging Face"],
       "bullets": [
         {
@@ -113,7 +133,44 @@
           "metrics_available": false
         }
       ]
+    },
+    {
+  "name": "ApplyForge - ATS-Friendly Resume Builder",
+  "project_role": "flagship",
+  "tech": ["Python", "Streamlit", "python-docx", "Jinja2", "ATS", "NLP"],
+  "bullets": [
+    {
+      "text": "Built a Streamlit-based ATS-friendly resume builder that analyzes job descriptions and generates tailored resume drafts from structured candidate profile data.",
+      "skills": ["Streamlit", "Python", "ATS", "Resume Generation", "Data Processing"],
+      "evidence": "ApplyForge project",
+      "metrics_available": false
+    },
+    {
+      "text": "Implemented synonym-aware skill matching to map job description aliases such as ML, sklearn, data wrangling, and dashboards to canonical resume skills.",
+      "skills": ["Skill Matching", "NLP", "Machine Learning", "scikit-learn", "Data Cleaning", "Data Visualization"],
+      "evidence": "ApplyForge project",
+      "metrics_available": false
+    },
+    {
+      "text": "Developed role-specific resume generation modes for AI/ML Engineer, Data Scientist, Data Analyst, Computer Vision, and Python/Data Developer profiles.",
+      "skills": ["Role-Based Personalization", "ATS", "Resume Generation", "Python"],
+      "evidence": "ApplyForge project",
+      "metrics_available": false
+    },
+    {
+      "text": "Added manual bullet selection, unsupported-claim filtering, and Strict, Balanced, and Compact generation modes to keep resume content controlled and evidence-based.",
+      "skills": ["Streamlit", "Evidence-Based Generation", "Quality Control", "ATS"],
+      "evidence": "ApplyForge project",
+      "metrics_available": false
+    },
+    {
+      "text": "Integrated Markdown and DOCX export with ATS text preview and resume quality diagnostics to validate generated resumes before application.",
+      "skills": ["python-docx", "DOCX Export", "ATS Preview", "Quality Diagnostics"],
+      "evidence": "ApplyForge project",
+      "metrics_available": false
     }
+  ]
+}
   ],
   "skills": {
     "Languages": ["Python", "SQL"],
@@ -127,11 +184,20 @@
     "mAP",
     "precision",
     "recall",
+    "f1-score",
     "improved by",
     "increased by",
     "reduced by",
+    "optimized by",
     "production-ready",
-    "deployed to production"
+    "deployed to production",
+    "enterprise-grade",
+    "state-of-the-art",
+    "best-in-class",
+    "expert",
+    "senior-level",
+    "led a team",
+    "managed a team"
   ],
   "role_profiles": {
   "AI/ML Engineer": {
@@ -148,7 +214,12 @@
       "NumPy",
       "Streamlit",
       "YOLO",
-      "Computer Vision"
+      "Computer Vision",
+      "ATS",
+      "Skill Matching",
+      "Resume Generation",
+      "NLP",
+      "Evidence-Based Generation"
     ],
     "skill_category_order": [
       "Languages",
@@ -172,7 +243,11 @@
       "Data Cleaning",
       "Data Visualization",
       "Model Evaluation",
-      "Statistics"
+      "Statistics",
+      "Skill Matching",
+      "Data Processing",
+      "Quality Diagnostics",
+      "Data Analysis"
     ],
     "skill_category_order": [
       "Languages",
@@ -195,7 +270,11 @@
       "Plotly",
       "EDA",
       "Dashboard",
-      "Streamlit"
+      "Streamlit",
+      "Dashboard",
+      "Data Visualization",
+      "Quality Diagnostics",
+      "Data Processing"
     ],
     "skill_category_order": [
       "Languages",
@@ -240,7 +319,12 @@
       "Pandas",
       "Backend Integration",
       "AI Coding Tools",
-      "LLM"
+      "LLM",
+      "DOCX Export",
+      "Jinja2",
+      "python-docx",
+      "Streamlit",
+      "Data Processing"
     ],
     "skill_category_order": [
       "Languages",

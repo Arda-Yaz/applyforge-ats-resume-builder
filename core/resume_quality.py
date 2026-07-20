@@ -29,9 +29,9 @@ def build_resume_quality_report(
     strengths = []
 
     # Length checks
-    if word_count < 250:
+    if word_count < 350:
         warnings.append("Resume may be too short for a technical new graduate profile.")
-    elif word_count > 750:
+    elif word_count > 950:
         warnings.append("Resume may be too long for a one-page ATS resume.")
     else:
         strengths.append("Resume length looks suitable for a one-page technical resume.")

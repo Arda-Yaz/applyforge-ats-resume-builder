@@ -1,5 +1,6 @@
 import streamlit as st
 
+from core.resume_composer import compose_resume_bullets
 from core.resume_quality import build_resume_quality_report
 from core.docx_exporter import export_resume_to_docx
 from core.ats_preview import extract_docx_text, build_ats_preview_report
@@ -11,7 +12,6 @@ from core.cv_generator import (
     generate_markdown_resume,
     group_selected_bullets,
     save_markdown_resume,
-    enhance_selected_bullets,
     get_role_profile,
     reorder_skills_by_role,
 )
@@ -63,9 +63,9 @@ with st.sidebar:
         index=1,
     )
 
-    st.caption("Strict: only selected bullets")
-    st.caption("Balanced: selected bullets + context bullets")
-    st.caption("Compact: strongest selected bullets only")
+    st.caption("Strict: only manually selected bullets")
+    st.caption("Balanced: detailed value-rich resume")
+    st.caption("Compact: shorter application-focused resume")
 
     st.divider()
 
@@ -218,38 +218,21 @@ if st.session_state.analysis_result:
     )
 
     if st.session_state.generate_resume_clicked:
-        if resume_mode == "Strict":
-            final_bullets = selected_bullets
+        composition_result = compose_resume_bullets(
+            profile=profile,
+            selected_bullets=selected_bullets,
+            resume_mode=resume_mode,
+            job_keywords=result["job_keywords"],
+            role_keywords=role_keywords,
+        )
 
-        elif resume_mode == "Balanced":
-            final_bullets = enhance_selected_bullets(
-                profile=profile,
-                selected_bullets=selected_bullets,
-                min_project_bullets=2,
-                max_project_bullets=4,
-                min_experience_bullets=3,
-                max_experience_bullets=5,
-            )
+        final_bullets = composition_result["final_bullets"]
 
-            context_added = [
-                bullet for bullet in final_bullets
-                if bullet.get("context_added")
-            ]
+        for note in composition_result["notes"]:
+            st.info(note)
 
-            if context_added:
-                st.info(
-                    f"{len(context_added)} context bullet added to keep resume sections complete."
-                )
-
-        elif resume_mode == "Compact":
-            final_bullets = sorted(
-                selected_bullets,
-                key=lambda bullet: bullet.get("score", 0),
-                reverse=True,
-            )[:6]
-
-        else:
-            final_bullets = selected_bullets
+        for warning in composition_result["warnings"]:
+            st.warning(warning)
 
         resume_md = generate_markdown_resume(
             profile=profile,

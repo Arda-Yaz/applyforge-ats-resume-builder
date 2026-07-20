@@ -32,13 +32,17 @@ New graduate Computer Engineer focused on AI, machine learning, and data-driven 
 Ankara, Turkey | July 2025 - August 2025
 
 
-- Managed bounding box annotation workflows for object detection model training.
-
-- Applied data augmentation techniques to improve robustness under different document conditions.
+- Applied data augmentation techniques to improve model robustness under different document conditions.
 
 - Trained a YOLO-based object detection prototype for symbol detection and classification in technical documents.
 
 - Collected and annotated a custom dataset for detecting GD&T symbols in technical engineering drawings.
+
+- Managed bounding box annotation workflows for object detection model training.
+
+- Worked on small-object detection challenges in noisy engineering drawing documents.
+
+- Contributed to an end-to-end computer vision workflow covering dataset preparation, annotation, augmentation, model training, and result review.
 
 
 
@@ -53,9 +57,9 @@ Ankara, Turkey | July 2025 - August 2025
 
 - Developed modular data cleaning tools for missing values, duplicates, outliers, and inconsistent values.
 
-- Integrated classification and regression workflows using scikit-learn with standard preprocessing steps.
-
 - Implemented support for CSV, TSV, Excel, and JSON file ingestion with automatic column type inference.
+
+- Integrated classification and regression workflows using scikit-learn with standard preprocessing steps.
 
 
 ### AI-Powered Personality Analysis App
@@ -64,7 +68,22 @@ Ankara, Turkey | July 2025 - August 2025
 
 - Developed a Streamlit application for Big Five-based personality analysis and MBTI-style inference.
 
+- Used a Hugging Face-based language model to generate personalized analysis text.
+
 - Integrated Supabase for user session tracking and result storage.
+
+
+### ApplyForge - ATS-Friendly Resume Builder
+**Tech:** Python, Streamlit, python-docx, Jinja2, ATS, NLP
+
+
+- Implemented synonym-aware skill matching to map job description aliases such as ML, sklearn, data wrangling, and dashboards to canonical resume skills.
+
+- Built a Streamlit-based ATS-friendly resume builder that analyzes job descriptions and generates tailored resume drafts from structured candidate profile data.
+
+- Developed role-specific resume generation modes for AI/ML Engineer, Data Scientist, Data Analyst, Computer Vision, and Python/Data Developer profiles.
+
+- Added manual bullet selection, unsupported-claim filtering, and Strict, Balanced, and Compact generation modes to keep resume content controlled and evidence-based.
 
 
 

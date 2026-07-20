@@ -60,6 +60,61 @@ KEYWORD_ALIASES = {
         "regressor",
         "regressors",
     ],
+    "ATS": [
+        "ats",
+        "applicant tracking system",
+        "applicant tracking systems",
+    ],
+    "Resume Generation": [
+        "resume generation",
+        "cv generation",
+        "resume builder",
+        "cv builder",
+    ],
+    "Skill Matching": [
+        "skill matching",
+        "skills matching",
+        "keyword matching",
+        "semantic matching",
+    ],
+    "Quality Diagnostics": [
+        "quality diagnostics",
+        "quality check",
+        "quality checks",
+        "resume quality",
+    ],
+    "DOCX Export": [
+        "docx",
+        "docx export",
+        "word export",
+        "microsoft word",
+    ],
+    "Jinja2": [
+        "jinja2",
+        "jinja",
+    ],
+    "python-docx": [
+        "python-docx",
+        "python docx",
+    ],
+    "Evidence-Based Generation": [
+        "evidence-based",
+        "evidence based",
+        "claim filtering",
+        "unsupported claim",
+        "unsupported claims",
+    ],
+    "Dashboard": [
+        "dashboard",
+        "dashboards",
+        "reporting dashboard",
+    ],
+    "Data Processing": [
+        "data processing",
+        "data pipeline",
+        "data workflows",
+        "data workflow",
+    ],
     "Pandas": ["pandas"],
     "NumPy": ["numpy", "num py"],
     "scikit-learn": [
