@@ -110,31 +110,6 @@
       ]
     },
     {
-      "name": "AI-Powered Personality Analysis App",
-      "project_role": "supporting",
-      "tech": ["Streamlit", "Supabase", "Hugging Face"],
-      "bullets": [
-        {
-          "text": "Developed a Streamlit application for Big Five-based personality analysis and MBTI-style inference.",
-          "skills": ["Streamlit", "LLM", "Personality Analysis"],
-          "evidence": "Project implementation",
-          "metrics_available": false
-        },
-        {
-          "text": "Integrated Supabase for user session tracking and result storage.",
-          "skills": ["Supabase", "Backend Integration", "Database"],
-          "evidence": "Project implementation",
-          "metrics_available": false
-        },
-        {
-          "text": "Used a Hugging Face-based language model to generate personalized analysis text.",
-          "skills": ["Hugging Face", "LLM", "Text Generation"],
-          "evidence": "Project implementation",
-          "metrics_available": false
-        }
-      ]
-    },
-    {
   "name": "ApplyForge - ATS-Friendly Resume Builder",
   "project_role": "flagship",
   "tech": ["Python", "Streamlit", "python-docx", "Jinja2", "ATS", "NLP"],

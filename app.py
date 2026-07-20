@@ -227,6 +227,25 @@ if st.session_state.analysis_result:
         )
 
         final_bullets = composition_result["final_bullets"]
+        from collections import Counter
+        section_counts = Counter()
+        project_counts = Counter()
+
+        for bullet in final_bullets:
+            section = bullet.get("section", "unknown")
+            parent = bullet.get("parent", "unknown")
+
+            section_counts[section] += 1
+
+            if section == "projects":
+                project_counts[parent] += 1
+
+        st.subheader("Composition Debug")
+
+        st.write("Section counts:", dict(section_counts))
+
+        if project_counts:
+            st.write("Project counts:", dict(project_counts))
 
         for note in composition_result["notes"]:
             st.info(note)
